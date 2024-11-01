@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>صفحة جامعة الملك خالد</title>
+    <style>
+        /* ضبط لون الخلفية ومحاذاة النصوص */
+        body {
+            background-color: yellow;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            direction: rtl;
+        }
+
+        /* تنسيق عنوان الجامعة */
+        h1 {
+            font-size: 3em;
+            color: #333;
+            margin-top: 20%;
+        }
+
+        /* نص متحرك من اليمين إلى اليسار */
+        .scroll-text {
+            font-size: 1.5em;
+            color: #007bff;
+            display: inline-block;
+            animation: scroll 5s linear infinite;
+        }
+
+        /* حركة النص من اليمين لليسار */
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* تنسيق النص الموجود أسفل النص المتحرك */
+        .content-text {
+            font-size: 1.2em;
+            color: #555;
+            margin: 20px auto;
+            width: 80%;
+            line-height: 1.6;
+        }
+
+        /* تنسيق الفيديو */
+        .video-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- عنوان الجامعة في منتصف الصفحة -->
+    <h1>جامعة الملك خالد</h1>
+
+    <!-- النص المتحرك -->
+    <div class="scroll-text">التعلم الإلكتروني</div>
+
+    <!-- النص المطلوب أسفل النص المتحرك -->
+    <div class="content-text">
+        بخصوص الخطاب المرسل من سعادتكم الخاص بتضارب المصالح لبرنامج "تقنيات التعليم" نظام المقررات، أحيط سعادتكم علماً بأن أحد أعضاء اللجنة المشكلة للزيارة النهائية لهذا البرنامج وهى سعادة الأستاذة الدكتورة هدى بنت يحي اليامي، قد سبق وأن قدمت طلب نقل للقسم أثناء جائحة كورنا وتمت الموافقة على هذا الطلب من قبل الجامعة للاستفادة من خبراتها الكبيرة.
+    </div>
+
+    <!-- إدراج الفيديو -->
+    <div class="video-container">
+        <video width="600" controls>
+            <source src="file:///E:/Python/kku2/2.mp4">
+
+        </video>
+    </div>
+
+</body>
+</html>
